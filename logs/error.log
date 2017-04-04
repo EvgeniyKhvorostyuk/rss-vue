@@ -1,0 +1,26 @@
+2017/04/04 12:33:18 [error] 7940#7940: *1 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: PDOException
+Code: 1045
+Message: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+File: /var/www/rss-vue/src/Model/Mapper.php
+Line: 13
+Trace: #0 /var/www/rss-vue/src/Model/Mapper.php(13): PDO->__construct('mysql:host=loca...', 'root', '123')
+#1 /var/www/rss-vue/src/Controller/Items.php(19): App\Model\Mapper->__construct()
+#2 [internal function]: App\Controller\Items->all(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /var/www/rss-vue/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /var/www/rss-vue/vendor/slim/slim/Slim/Route.php(344): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /var/www/rss-vue/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(122): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /v" while reading response header from upstream, client: 192.168.56.1, server: rss-vue.dev, request: "GET /items HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "rss-vue.dev", referrer: "http://rss-vue.dev/"
+2017/04/04 12:33:19 [error] 7940#7940: *1 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: PDOException
+Code: 1045
+Message: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+File: /var/www/rss-vue/src/Model/Mapper.php
+Line: 13
+Trace: #0 /var/www/rss-vue/src/Model/Mapper.php(13): PDO->__construct('mysql:host=loca...', 'root', '123')
+#1 /var/www/rss-vue/src/Controller/Items.php(19): App\Model\Mapper->__construct()
+#2 [internal function]: App\Controller\Items->all(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /var/www/rss-vue/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /var/www/rss-vue/vendor/slim/slim/Slim/Route.php(344): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /var/www/rss-vue/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(122): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /v" while reading response header from upstream, client: 192.168.56.1, server: rss-vue.dev, request: "GET /items HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "rss-vue.dev", referrer: "http://rss-vue.dev/"

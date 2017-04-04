@@ -19,7 +19,7 @@ environments:
         host: localhost
         name: rest_items
         user: root
-        pass: '123'
+        pass: '7315'
         port: 3306
         charset: utf8
 

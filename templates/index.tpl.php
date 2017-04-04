@@ -121,7 +121,7 @@
             var app = new Vue({
                 el: '#rest-client',
                 data: {
-                    message: 'REST Demo',
+                    message: 'RSS Vue.js',
                     items: [],
                     newItem: {
                         name: '',
